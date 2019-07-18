@@ -10,26 +10,26 @@
 </head>
 
 <body>
-    <h1>Agenda</h1>
+    <h1 class="title">Agenda</h1>
     <div class="all-lists">
         <h2 class="lists-tile">Lists</h2>
         <ul class="task-list">
-            <li class="current-list">List 1</li>
-            <li>List 2</li>
-            <li>List 3</li>
+            <li class="name-list current-list">List 1</li>
+            <li class="name-list ">List 2</li>
+            <li class="name-list ">List 3</li>
         </ul>
 
         <form action="">
-            <input type="text" class="new-list" placeholder="New list name" aria-label="New list name">
+            <input type="text" class="new-input new-list" placeholder="New list name" aria-label="New list name">
 
-            <button class="btn-list" aria-label="create new list">+</button>
+            <button class="btn btn-new" aria-label="create new list">+</button>
 
         </form>
     </div>
 
-    <div class="list">
+    <div class="list-task">
         <div class="todo-header">
-            <h2 class="title">List 1</h2>
+            <h2 class="todo-title">List 1</h2>
             <p class="count">4 tasks remaining</p>
         </div>
 
@@ -38,21 +38,21 @@
                 <div class="task">
                     <input type="checkbox" id='task-1'>
                     <label for="task-1">
-                        <span class=".checkbox-custom"></span>
+                        <span class="checkbox-custom"></span>
                         task 1</label>
                 </div>
 
                 <div class="task">
                     <input type="checkbox" id='task-2'>
                     <label for="task-2">
-                        <span class=".checkbox-custom"></span>
+                        <span class="checkbox-custom"></span>
                         task 2</label>
                 </div>
 
                 <div class="task">
                     <input type="checkbox" id='task-3'>
                     <label for="task-3">
-                        <span class=".checkbox-custom"></span>
+                        <span class="checkbox-custom"></span>
                         task 3</label>
                 </div>
 
@@ -60,22 +60,22 @@
                 <div class="task">
                     <input type="checkbox" id='task-4'>
                     <label for="task-4">
-                        <span class=".checkbox-custom"></span>
+                        <span class="checkbox-custom"></span>
                         task 4</label>
                 </div>
 
             </div>
             <div class="task-creator">
                     <form action="">
-                            <input type="text" class="new-list" placeholder="New task name" aria-label="New task name">
+                            <input type="text" class="new-input new-task" placeholder="New task name" aria-label="New task name">
                 
-                            <button class="btn-task" aria-label="create new task">+</button>
+                            <button class="btn btn-new" aria-label="create new task">+</button>
                 
                         </form>
             </div>
             <div class="task-delete">
-                <button class="btn-delete">Clear Completed Task</button>
-                <button class="btn-delete">Delete List</button>
+                <button class="btn delete">Clear Completed Task</button>
+                <button class="btn delete">Delete List</button>
             </div>
 
         </div>
