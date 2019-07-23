@@ -14,11 +14,7 @@
     <h1 class="title">Agenda</h1>
     <div class="all-lists">
         <h2 class="lists-tile">Lists</h2>
-        <ul class="task-list" data-lists>
-            <!-- <li class="name-list current-list">List 1</li>
-            <li class="name-list ">List 2</li>
-            <li class="name-list ">List 3</li> -->
-        </ul>
+        <ul class="task-list" data-lists></ul>
 
         <form action="" data-new-list>
             <input type="text" class="new-input new-list" data-new-list-input placeholder="new list name"
@@ -36,40 +32,11 @@
         </div>
 
         <div class="list-body">
-            <div class="tasks" data-tasks>
-                <div class="task">
-                    <input type="checkbox" id='task-1'>
-                    <label for="task-1">
-                        <span class="checkbox-custom"></span>
-                        task 1</label>
-                </div>
+            <div class="tasks" data-tasks> </div>
 
-                <div class="task">
-                    <input type="checkbox" id='task-2'>
-                    <label for="task-2">
-                        <span class="checkbox-custom"></span>
-                        task 2</label>
-                </div>
-
-                <div class="task">
-                    <input type="checkbox" id='task-3'>
-                    <label for="task-3">
-                        <span class="checkbox-custom"></span>
-                        task 3</label>
-                </div>
-
-
-                <div class="task">
-                    <input type="checkbox" id='task-4'>
-                    <label for="task-4">
-                        <span class="checkbox-custom"></span>
-                        task 4</label>
-                </div>
-
-            </div>
             <div class="task-creator">
-                <form action="">
-                    <input type="text" class="new-input new-task" placeholder="new task name"
+                <form action="" data-new-task-form>
+                    <input type="text" class="new-input new-task" data-new-task-input placeholder="new task name"
                         aria-label="New task name">
 
                     <button class="btn btn-new" aria-label="create new task">+</button>
@@ -77,7 +44,7 @@
                 </form>
             </div>
             <div class="task-delete">
-                <button class="btn delete">Clear Completed Task</button>
+                <button class="btn delete" data-clear-complete-tasks-btn>Clear Completed Task</button>
                 <button class="btn delete" data-delete-list-btn>Delete List</button>
             </div>
 
